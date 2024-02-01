@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5  # Atualizado para a versão 5 do actions/checkout
       - name: get python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
       - name: install bazelisk
-        uses: bazelbuild/setup-bazelisk@v2
+        uses: bazelbuild/setup-bazelisk@v3  # Atualizado para a versão 3 do bazelbuild/setup-bazelisk
       - name: install llvm
         run: sudo apt-get update && sudo apt-get install -y llvm
       - name: build lol
