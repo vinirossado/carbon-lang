@@ -9,7 +9,7 @@ jobs:
       - name: get python
         uses: actions/setup-python@v4
         with:
-          python-version:'3.9'
+          python-version: '3.9'
       - name: install bazelisk
         uses: bazelbuild/setup-bazelisk@v2
       - name: install llvm
